@@ -1,0 +1,17 @@
+function findSecondLargest(arr: number[]): number {
+  let max = -Infinity,
+    secondMax = -Infinity;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+        secondMax = max;
+      max = arr[i];
+    } else if (arr[i] < max && arr[i] > secondMax) {
+      secondMax = arr[i];
+    }
+  }
+  return secondMax;
+}
+
+let arr: number[] = [10, 10];
+console.log(findSecondLargest(arr));
