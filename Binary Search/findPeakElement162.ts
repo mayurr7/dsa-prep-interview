@@ -17,3 +17,5 @@ function findPeakElement(nums: number[]): number {
 
 const nums: number[] = [1, 2, 1, 3, 5, 6, 4];
 console.log(findPeakElement(nums));
+
+export{}
